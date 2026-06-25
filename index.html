@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fcommunity — Hub de développement d'outils avancés pour Discord. Découvrez Opsec PRO (selfbot professionnel) et FCord (client modifié).">
+    
+    <title>Fcommunity — Discord Automation & Client Modding Hub</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- --- NAVBAR --- -->
+    <header class="navbar" id="navbar">
+        <a href="#" class="nav-logo" id="nav-logo">
+            <!-- Custom SVG Tech Logo -->
+            <svg class="logo-svg" viewBox="0 0 100 100" width="34" height="34">
+                <defs>
+                    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00f0ff" />
+                        <stop offset="100%" stop-color="#7289da" />
+                    </linearGradient>
+                    <filter id="logo-glow">
+                        <feGaussianBlur stdDeviation="3" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <polygon points="50,5 90,28 90,72 50,95 10,72 10,28" fill="none" stroke="url(#logo-grad)" stroke-width="6" filter="url(#logo-glow)"/>
+                <path d="M35,32 H65 V42 H47 V52 H60 V62 H47 V76 H35 Z" fill="url(#logo-grad)"/>
+            </svg>
+            <span>Fcommunity</span>
+        </a>
+        
+        <nav class="nav-links" id="nav-links">
+            <a href="#" class="nav-link active" id="link-home">Accueil</a>
+            <a href="#projects" class="nav-link" id="link-projects">Projets</a>
+            <a href="#developer" class="nav-link" id="link-developer">Développeur</a>
+            <a href="https://github.com/ellecrydansmesdm" class="nav-link" target="_blank" id="link-github">GitHub</a>
+        </nav>
+        
+        <a href="https://discord.gg/Q56drkYQb5" class="btn-discord-nav" target="_blank" id="btn-discord-nav">
+            <i data-lucide="message-square"></i>
+            <span>Discord</span>
+        </a>
+        
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- --- HERO SECTION --- -->
+    <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        
+        <div class="badge-welcome" id="badge-welcome">
+            <i data-lucide="sparkles" size="14"></i>
+            <span>Bienvenue sur Fcommunity</span>
+        </div>
+        
+        <h1 class="hero-title" id="hero-title">
+            Dominez Discord avec nos <span class="gradient-text">Outils Ultra-Performants</span>
+        </h1>
+        
+        <p class="hero-description" id="hero-description">
+            Fcommunity conçoit des utilitaires d'automatisation avancés et des clients modifiés ultra-rapides pour enrichir et sécuriser votre expérience au quotidien.
+        </p>
+        
+        <div class="hero-ctas" id="hero-ctas">
+            <a href="#projects" class="btn-primary" id="hero-cta-projects">
+                <span>Découvrir nos projets</span>
+                <i data-lucide="arrow-right" size="18"></i>
+            </a>
+            <a href="https://discord.gg/Q56drkYQb5" class="btn-secondary" target="_blank" id="hero-cta-discord">
+                <i data-lucide="message-square" size="18"></i>
+                <span>Rejoindre le support</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- --- PROJECTS SECTION --- -->
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <h2 class="section-title" id="projects-title">Nos Projets Phares</h2>
+            <p class="section-subtitle" id="projects-subtitle">Des applications optimisées, robustes et pensées pour les power-users.</p>
+        </div>
+        
+        <div class="projects-grid" id="projects-grid">
+            
+            <!-- OPSEC PRO CARD -->
+            <div class="project-card opsec" id="project-opsec">
+                <div class="card-top">
+                    <div class="card-header">
+                        <div class="project-icon-wrapper">
+                            <i data-lucide="shield-check" size="32"></i>
+                        </div>
+                        <span class="project-badge">STABLE</span>
+                    </div>
+                    
+                    <h3 class="project-title">Opsec PRO</h3>
+                    <p class="project-description">
+                        Un selfbot professionnel haut de gamme conçu pour l'automatisation avancée, le mass-cleaning et la gestion de présence en temps réel sur Discord.
+                    </p>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Mass-Clear de précision (Purge ultra-rapide)</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Rich Presence Spotify (Paroles dynamiques)</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>AFK Farmer de salons vocaux 24/7</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Système anti-kick et proxies intégrés</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card-actions">
+                    <a href="https://github.com/ellecrydansmesdm/opsec-pro/releases/tag/RELEASE" class="btn-card-primary" target="_blank" id="btn-download-opsec">
+                        <i data-lucide="download" size="18"></i>
+                        <span>Télécharger (.exe)</span>
+                    </a>
+                    <a href="https://github.com/ellecrydansmesdm/opsec-pro" class="btn-card-secondary" target="_blank" aria-label="GitHub Opsec PRO" id="btn-github-opsec">
+                        <i data-lucide="github" size="20"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- FCORD CARD -->
+            <div class="project-card fcord" id="project-fcord">
+                <div class="card-top">
+                    <div class="card-header">
+                        <div class="project-icon-wrapper">
+                            <i data-lucide="code-2" size="32"></i>
+                        </div>
+                        <span class="project-badge">DEVELOPMENT</span>
+                    </div>
+                    
+                    <h3 class="project-title">FCord</h3>
+                    <p class="project-description">
+                        Une modification complète du client Discord (cord) axée sur la légèreté, la personnalisation visuelle avancée et l'optimisation des API.
+                    </p>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Performance brute (Temps de chargement divisé par 2)</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Chargeur de scripts & plugins personnalisés</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Protection contre la télémétrie Discord</span>
+                        </li>
+                        <li class="feature-item">
+                            <i data-lucide="check-circle" size="16"></i>
+                            <span>Thèmes personnalisés et CSS injecté à la volée</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card-actions">
+                    <a href="https://github.com/ellecrydansmesdm/FCord" class="btn-card-primary" target="_blank" id="btn-download-fcord">
+                        <i data-lucide="github" size="18"></i>
+                        <span>Dépôt GitHub</span>
+                    </a>
+                    <a href="https://github.com/ellecrydansmesdm/FCord" class="btn-card-secondary" target="_blank" aria-label="GitHub FCord" id="btn-github-fcord">
+                        <i data-lucide="external-link" size="20"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- --- DEVELOPER PROFILE (LANYARD) --- -->
+    <section class="developer-section" id="developer">
+        <div class="section-header">
+            <h2 class="section-title">Fondateur & Développeur</h2>
+            <p class="section-subtitle">Découvrez mon activité et mon statut Discord en temps réel.</p>
+        </div>
+        
+        <div class="lanyard-container">
+            <div class="lanyard-card" id="lanyard-card">
+                <div class="lanyard-main">
+                    <div class="avatar-container">
+                        <img id="discord-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" alt="Avatar Discord">
+                        <span id="discord-status-dot" class="status-dot offline"></span>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-name-title">
+                            <h3 id="discord-username">ellecrydansmesdm</h3>
+                            <span class="developer-badge">Founder</span>
+                        </div>
+                        <p id="discord-custom-status" class="custom-status">Connexion à Lanyard...</p>
+                    </div>
+                </div>
+                
+                <div class="lanyard-activity" id="lanyard-activity">
+                    <!-- Activity Details -->
+                    <div class="no-activity">
+                        <i data-lucide="coffee" size="20"></i>
+                        <span>Aucune activité détectée</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- DISCORD COMMUNITY SECTION --- -->
+    <section class="discord-section" id="community">
+        <div class="discord-card" id="discord-card">
+            <div class="discord-info">
+                <h2 class="discord-card-title" id="discord-card-title">Besoin d'aide ou de support ?</h2>
+                <p class="discord-card-desc" id="discord-card-desc">
+                    Rejoignez notre serveur Discord de support pour être informé des mises à jour, poser vos questions ou proposer de nouvelles idées de fonctionnalités !
+                </p>
+                <div class="discord-contact" id="discord-contact">
+                    <div class="contact-avatar" id="contact-avatar">F</div>
+                    <div>
+                        <div class="contact-tag" id="contact-tag">@ellecrydansmesdm</div>
+                        <div class="contact-sub" id="contact-sub">Développeur & Fondateur</div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="https://discord.gg/Q56drkYQb5" class="btn-discord-large" target="_blank" id="btn-discord-large">
+                <i data-lucide="message-square" size="24"></i>
+                <span>Rejoindre le serveur</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- --- FOOTER --- -->
+    <footer class="footer" id="footer">
+        <div class="footer-rights" id="footer-rights">
+            <span class="footer-logo">Fcommunity</span>
+            <span>&copy; 2026 Fcommunity. Tous droits réservés.</span>
+            <span>Ce site n'est pas affilié à Discord Inc.</span>
+        </div>
+        
+        <div class="footer-links" id="footer-links">
+            <a href="https://github.com/ellecrydansmesdm" target="_blank" class="footer-link">GitHub</a>
+            <a href="https://discord.gg/Q56drkYQb5" target="_blank" class="footer-link">Discord</a>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="app.js"></script>
+</body>
+</html>
