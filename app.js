@@ -231,6 +231,21 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Re-render Lucide icons injected dynamically
                     lucide.createIcons();
                 }
+            } else {
+                // Fallback display if user is not monitored by Lanyard yet
+                const avatarImg = document.getElementById('discord-avatar');
+                const statusDot = document.getElementById('discord-status-dot');
+                const customStatus = document.getElementById('discord-custom-status');
+                
+                if (avatarImg) {
+                    avatarImg.src = 'https://cdn.discordapp.com/embed/avatars/0.png';
+                }
+                if (statusDot) {
+                    statusDot.className = 'status-dot offline';
+                }
+                if (customStatus) {
+                    customStatus.textContent = 'Hors ligne / Non connecté à Lanyard';
+                }
             }
         } catch (error) {
             console.error('Error fetching Lanyard status:', error);
