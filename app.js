@@ -134,6 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
             if (result.success && result.data) {
                 const data = result.data;
                 
+                // Update display name & username
+                const displayNameText = document.getElementById('discord-display-name');
+                const usernameText = document.getElementById('discord-username');
+                if (displayNameText) {
+                    displayNameText.textContent = data.discord_user.global_name || data.discord_user.display_name || data.discord_user.username;
+                }
+                if (usernameText) {
+                    usernameText.textContent = `@${data.discord_user.username}`;
+                }
+                
                 // Update avatar
                 const avatarImg = document.getElementById('discord-avatar');
                 if (avatarImg) {

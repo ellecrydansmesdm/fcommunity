@@ -650,10 +650,17 @@ a {
     gap: 10px;
 }
 
-#discord-username {
+#discord-display-name {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
+}
+
+#discord-username {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    opacity: 0.85;
 }
 
 .developer-badge {
