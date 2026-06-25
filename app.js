@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 6. Lanyard Discord API Integration
-    const discordId = "759026330003308625";
+    const discordId = "1113108440575922236";
     
     async function updateLanyard() {
         try {
